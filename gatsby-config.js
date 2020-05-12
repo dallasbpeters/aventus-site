@@ -1,5 +1,5 @@
 module.exports = {
-  // pathPrefix: "/reponame",
+  pathPrefix: "/aventus-site",
   siteMetadata: {
     title: `Aventus Media Group`,
     description: `Media Group based in Austin Texas`,
