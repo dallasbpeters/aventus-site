@@ -2,7 +2,7 @@ import React from "react"
 
 const ContactForm = () => (
   <>
-    <form className="sm:p-0 md:pb-0 md:p-4 w-full">
+    <form className="sm:p-0 md:pb-0 md:p-4 w-full" netlify>
       <div className="mb-4 w-full">
         <input
           className="contact-input"

@@ -1,11 +1,12 @@
 module.exports = {
-  pathPrefix: "/aventus-site",
+  // pathPrefix: "/aventus-site", <== For github pages
   siteMetadata: {
     title: `Aventus Media Group`,
     description: `Media Group based in Austin Texas`,
     author: `@dallasbpeters`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-postcss`,

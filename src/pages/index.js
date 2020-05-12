@@ -15,13 +15,13 @@ const IndexPage = () => (
 
     <div
       id="philosophy"
-      className="mt-1 md:mt-10 p-4 md:p-0 max-w-screen-md p-16 lg:p-3"
+      className="mt-1 md:mt-10 p-4 md:p-0 max-w-screen-md p-16 lg:p-0"
     >
       <Philosophy />
     </div>
     <div
       id="services"
-      className="mt-1 md:mt-10 p-4 md:p-0 max-w-screen-md p-16 lg:p-3"
+      className="mt-1 md:mt-10 p-4 md:p-0 max-w-screen-md p-16 lg:p-0"
     >
       <Services />
     </div>
