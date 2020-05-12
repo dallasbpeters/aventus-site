@@ -1,20 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+import ContactForm from "../components/contact-form"
+import Philosophy from "../text/philosophy.mdx"
+import Services from "../text/services.mdx"
+import Contact from "../text/contact.mdx"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+
+    <div
+      id="philosophy"
+      className="mt-1 md:mt-10 p-4 md:p-0 max-w-screen-md p-16 lg:p-3"
+    >
+      <Philosophy />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div
+      id="services"
+      className="mt-1 md:mt-10 p-4 md:p-0 max-w-screen-md p-16 lg:p-3"
+    >
+      <Services />
+    </div>
+    <div
+      id="contact"
+      className="mt-1 md:mt-10 flex p-4 md:p-0 flex-col md:flex-row"
+    >
+      <div className="max-w-md mr-0 md:mr-6 lg:mr-6">
+        <Contact />
+      </div>
+      <div className="flex-1">
+        <ContactForm />
+      </div>
+    </div>
   </Layout>
 )
 

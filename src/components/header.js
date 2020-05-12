@@ -1,34 +1,27 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from "../images/aventus-logo--white-ish.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <div className="container">
+    <header className="flex items-center justify-between mb-6 md:mb-10 mt-6 md:mb-10 p-3 lg:p-0">
+      <Link to="/" className="block">
+        <Logo title={siteTitle} />
+      </Link>
+      <ul className="flex uppercase font-display text-xl">
+        <li className="p-1">
+          <a href="#philosophy">Philosophy</a>
+        </li>
+        <li className="p-1">
+          <a href="#services">Services</a>
+        </li>
+        <li className="p-1">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+  </div>
 )
 
 Header.propTypes = {
