@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <div className="footer--contact-info bg-primary p-3 lg:p-7 flex-auto font-light">
               <p className="mb-0 text-black font-normal text-2xl">
-                John Catania
+                Jon Catania
               </p>
               <p className="mb-0 text-sm">Founder</p>
               <div className="stub-divider" />
