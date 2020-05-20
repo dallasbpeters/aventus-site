@@ -1,6 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+
+import Scrollspy from "react-scrollspy"
+import Scroll from "./scroll"
+
 import Logo from "../images/aventus-logo--white-ish.svg"
 
 const Header = ({ siteTitle }) => (
@@ -9,15 +13,26 @@ const Header = ({ siteTitle }) => (
       <Link to="/" className="block">
         <Logo title={siteTitle} />
       </Link>
+      <Scrollspy
+        items={["philosophy", "services", "contact"]}
+        currentClassName="is-active"
+        offset={-300}
+      ></Scrollspy>
       <ul className="flex uppercase font-display text-xl">
         <li className="p-1">
-          <a href="#philosophy">Philosophy</a>
+          <Scroll type="id" element="philosophy">
+            <a href="#philosophy">Philosophy</a>
+          </Scroll>
         </li>
         <li className="p-1">
-          <a href="#services">Services</a>
+          <Scroll type="id" element="services">
+            <a href="#services">Services</a>
+          </Scroll>
         </li>
         <li className="p-1">
-          <a href="#contact">Contact</a>
+          <Scroll type="id" element="contact">
+            <a href="#contact">Contact</a>
+          </Scroll>
         </li>
       </ul>
     </header>
