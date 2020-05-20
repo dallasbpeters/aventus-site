@@ -30,7 +30,7 @@ const IndexPage = () => (
       <div className="max-w-md mr-0 md:mr-6 lg:mr-6">
         <Contact />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 max-w-screen-sm">
         <ContactForm />
       </div>
     </div>

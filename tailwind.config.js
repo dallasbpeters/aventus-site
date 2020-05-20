@@ -8,7 +8,7 @@ module.exports = {
       primary: "#ED1C24",
     }),
     screens: {
-      xs: "420",
+      xs: "420px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
