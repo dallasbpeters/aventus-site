@@ -16,6 +16,7 @@ const ContactForm = () => (
         <input
           className="contact-input"
           id="name"
+          name="name"
           type="text"
           placeholder="Name"
         ></input>
@@ -25,6 +26,7 @@ const ContactForm = () => (
         <input
           className="contact-input"
           id="email"
+          name="email"
           type="email"
           placeholder="Email Address"
         ></input>
@@ -34,6 +36,7 @@ const ContactForm = () => (
         <textarea
           className="contact-input"
           id="message"
+          name="message"
           type="textarea"
           placeholder="Your Message"
         ></textarea>
