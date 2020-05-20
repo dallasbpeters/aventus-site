@@ -5,7 +5,7 @@ import React from "react"
 import Scrollspy from "react-scrollspy"
 import Scroll from "./scroll"
 
-import Logo from "../images/aventus-logo--white-ish.svg"
+import Logo from "../svgs/aventus-logo--white-ish.svg"
 
 const Header = ({ siteTitle }) => (
   <div className="container">

@@ -43,8 +43,8 @@ h2::after {
 
 .aventus-image-banner {
   display: block;
-  margin-left: -20px;
-  width: calc(100vw + 30px);
+  padding: 16px;
+  width: 100%;
   @apply mb-3;
 }
 

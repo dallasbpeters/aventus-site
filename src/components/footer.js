@@ -1,5 +1,5 @@
 import React from "react"
-import LogoVertical from "../images/aventus-text-vertical.svg"
+import LogoVertical from "../svgs/aventus-text-vertical.svg"
 
 const Footer = () => {
   return (
